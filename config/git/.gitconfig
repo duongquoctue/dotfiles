@@ -1,0 +1,13 @@
+[core]
+	editor = nvim
+	excludesfile = ~/.gitignore_global
+[user]
+	name = Tue Duong
+    email = rinzlersoftware@gmail.com
+    signingkey = ~/.ssh/id_ed25519.pub
+[color]
+    ui = true
+[commit]
+    gpgsign = true
+[http]
+	sslBackend = openssl

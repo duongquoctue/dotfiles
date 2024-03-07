@@ -1,0 +1,41 @@
+tap 'homebrew/cask-fonts'
+
+# Tools
+brew 'bat'
+brew 'coreutils' # Those that come with macOS are outdated
+brew 'ffmpeg'
+brew 'fastfetch'
+brew 'gh'
+brew 'git'
+brew 'grep'
+brew 'neovim'
+brew 'zoxide'
+brew 'zlib'
+
+# Development
+brew 'awscli'
+brew 'mysql'
+brew 'node'
+brew 'redis'
+brew 'pyenv'
+brew 'lua'
+
+# Applications
+cask 'appcleaner'
+cask 'cloudflare-warp'
+cask 'dbngin'
+cask 'discord'
+cask 'docker'
+cask 'evkey'
+cask 'kitty'
+cask 'postman'
+cask 'google-chrome'
+cask 'rar'
+cask 'transmission'
+cask 'telegram'
+cask 'vlc'
+cask 'visual-studio-code'
+cask 'zalo'
+
+# Fonts
+cask 'font-mononoki-nerd-font'
