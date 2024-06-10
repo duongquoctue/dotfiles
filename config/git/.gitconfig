@@ -1,5 +1,5 @@
 [core]
-	editor = nvim
+	editor = code --wait
 	excludesfile = ~/.gitignore_global
 [user]
 	name = Tue Duong
@@ -11,3 +11,5 @@
     gpgsign = true
 [http]
 	sslBackend = openssl
+[gpg]
+	format = ssh

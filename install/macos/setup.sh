@@ -9,13 +9,12 @@ else
     brew bundle --file "$(dirname $0)/Brewfile" --no-lock
 fi
 
-# Set default MySQL root password and auth type
-if test ! "$(which mysql)"; then
-    mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
-fi
+eval $(/opt/homebrew/bin/brew shellenv)
 
-# Create a work directories
-mkdir $HOME/work
+# Set default MySQL root password and auth type
+# if test ! "$(which mysql)"; then
+#     mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
+# fi
 
 # macOS related settings
 osascript -e 'tell application "System Preferences" to quit'
@@ -27,5 +26,3 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Avoid creating .DS_Store files on network or USB volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
-# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
