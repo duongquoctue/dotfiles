@@ -10,7 +10,6 @@ export GOARCH=arm64
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 alias c='clear'
 alias q='exit'
-alias vim='nvim'
 alias cd='z'
 alias useprune='export LC_CTYPE=C && export LANG=C'
 alias nprune="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
@@ -32,7 +31,7 @@ alias kreload='kubectl rollout restart deployment'
 alias kpod='kubectl describe pod'
 alias kdeploy='kubectl describe deploy'
 # insync
-alias insync_mysql='ssh -o ServerAliveInterval=3600 -o ServerAliveCountMax=10 -fN -L 3306:localhost:3306 insync-root'
+# alias insync_mysql='ssh -o ServerAliveInterval=3600 -o ServerAliveCountMax=10 -fN -L 3306:localhost:3306 insync-root'
 
 # search for all listening ports
 listening() {

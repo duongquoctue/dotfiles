@@ -1,5 +1,3 @@
-tap 'homebrew/cask-fonts'
-
 # Tools
 brew 'bat'
 brew 'coreutils' # Those that come with macOS are outdated
@@ -14,13 +12,13 @@ brew 'zlib'
 
 # Development
 brew 'awscli'
-brew 'mysql'
 brew 'node'
 brew 'redis'
 brew 'pyenv'
 brew 'lua'
 
 # Applications
+cask 'jetbrains-toolbox'
 cask 'appcleaner'
 cask 'cloudflare-warp'
 cask 'dbngin'
@@ -29,7 +27,7 @@ cask 'docker'
 cask 'evkey'
 cask 'kitty'
 cask 'postman'
-cask 'google-chrome'
+cask 'arc'
 cask 'rar'
 cask 'transmission'
 cask 'telegram'
