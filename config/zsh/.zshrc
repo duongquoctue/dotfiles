@@ -21,7 +21,8 @@ alias gdel='git push origin --delete '
 alias gst='git status'
 alias ga='git add'
 alias gcm='git commit -m'
-# docker
+# kubectl
+alias k='kubectl'
 alias kedit='kubectl edit deployment'
 alias kexec='kubectl exec -it'
 alias kgrep='kubectl get pods | grep'
