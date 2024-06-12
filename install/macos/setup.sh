@@ -15,7 +15,7 @@ fi
 # fi
 
 # Create a work directories
-mkdir $HOME/work
+# mkdir $HOME/work
 
 # macOS related settings
 osascript -e 'tell application "System Preferences" to quit'

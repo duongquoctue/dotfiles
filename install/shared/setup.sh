@@ -17,3 +17,7 @@ ln -sf "$cfg/git/.gitignore_global" "$HOME/.gitignore_global"
 # kitty
 rm -rf ~/.config/kitty
 ln -sf "$cfg/kitty" ~/.config/kitty
+
+# oh my posh
+rm -rf ~/.config/ohmyposh
+ln -sf "$cfg/ohmyposh" ~/.config/ohmyposh
