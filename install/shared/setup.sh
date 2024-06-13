@@ -5,7 +5,6 @@ cfg="$(pwd)/config"
 # zsh
 rm -rf "$HOME/.zprofile"
 rm -rf "$HOME/.zshrc"
-ln -sf "$cfg/zsh/.zprofile" "$HOME/.zprofile"
 ln -sf "$cfg/zsh/.zshrc" "$HOME/.zshrc"
 
 # git

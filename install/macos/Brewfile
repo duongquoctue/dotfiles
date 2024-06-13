@@ -9,6 +9,7 @@ brew 'grep'
 brew 'neovim'
 brew 'zoxide'
 brew 'zlib'
+brew 'jandedobbeleer/oh-my-posh/oh-my-posh'
 
 # Development
 brew 'go'

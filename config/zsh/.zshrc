@@ -1,3 +1,29 @@
+# fix issues with GPG signing
+export GPG_TTY=$(tty)
+
+# using homebrew if exists
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# using deno if exists
+if [ -x "$(command -v deno)" ]; then
+    # TODO
+fi
+
+# using pyenv if exists
+if [ -x "$(command -v pyenv)" ]; then
+    # TODO
+fi
+
+# using zoxide if exists
+if [ -x "$(command -v zoxide)" ]; then
+    eval "$(zoxide init zsh)"
+fi
+
+if [ -x "$(command -v oh-my-posh)" ]; then
+    eval "$(oh-my-posh init zsh --config "~/.config/ohmyposh/theme.json")"
+fi
+
+
 # golang vars
 export GOPATH=$HOME/work/go
 export PATH=$PATH:$GOPATH/bin

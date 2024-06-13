@@ -9,13 +9,12 @@ else
     brew bundle --file "$(dirname $0)/Brewfile" --no-lock
 fi
 
+eval $(/opt/homebrew/bin/brew shellenv)
+
 # Set default MySQL root password and auth type
 # if test ! "$(which mysql)"; then
 #     mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
 # fi
-
-# Create a work directories
-# mkdir $HOME/work
 
 # macOS related settings
 osascript -e 'tell application "System Preferences" to quit'
