@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "console_title_template": " {{ .Folder }} :: {{if .Root}}Admin{{end}}",
+  "console_title_template": "{{ .UserName }}@{{ .HostName }}",
   "palette": {
     "main-bg": "#24283b",
     "terminal-red": "#f7768e",
@@ -35,7 +35,8 @@
           "style": "plain",
           "foreground": "p:terminal-magenta",
           "properties": {
-            "style": "folder"
+            "style": "agnoster_short",
+            "max_depth": 2
           },
           "template": "<b>{{ .Path }}</b> <p:light-sky-blue>\u26a1</>"
         },
@@ -49,7 +50,7 @@
             "{{ if gt .Ahead 0 }}p:terminal-blue{{ end }}",
             "{{ if gt .Behind 0 }}p:celeste-blue{{ end }}"
           ],
-          "template": "({{ .HEAD}})",
+          "template": " {{ .UpstreamIcon }}{{ .HEAD }} {{ .Working }}",
           "properties": {
             "fetch_status": true,
             "branch_icon": "\ue725 "
@@ -60,6 +61,18 @@
           "style": "plain",
           "foreground": "p:terminal-green",
           "template": " \uf00d"
+        },
+        {
+          "type": "executiontime",
+          "style": "plain",
+          "background": "transparent",
+          "foreground": "p:white-blue",
+          "template": " <#fefefe></> {{ .FormattedMs }} ",
+          "properties": {
+            "threshold": 500,
+            "style": "austin",
+            "always_enabled": false
+          }
         }
       ],
       "type": "prompt"
@@ -137,8 +150,8 @@
     "template": "\u279c"
   },
   "transient_prompt": {
-    "background": "p:t-background",
-    "foreground": "p:terminal-blue",
+    "background": "transparent",
+    "foreground": "p:blue-bell",
     "template": "\u279c "
   },
   "final_space": true,
