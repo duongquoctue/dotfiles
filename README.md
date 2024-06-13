@@ -1,4 +1,4 @@
-# My personal dotfiles for macOS and Linux
+# My personal dotfiles for macOS
 
 ```sh
 chmod +x setup.sh
