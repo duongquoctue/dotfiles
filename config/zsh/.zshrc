@@ -46,6 +46,7 @@ export GOARCH=arm64
 # personal aliases
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 alias c='clear'
+alias ls='eza'
 alias l='eza'
 alias q='exit'
 alias cd='z'

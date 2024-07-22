@@ -3,12 +3,12 @@
 	excludesfile = ~/.gitignore_global
 [user]
 	name = Tue Duong
-    email = rinzlersoftware@gmail.com
-    signingkey = ~/.ssh/id_ed25519.pub
+	email = rinzlersoftware@gmail.com
+	signingkey = ~/.ssh/id_ed25519.pub
 [color]
-    ui = true
+	ui = true
 [commit]
-    gpgsign = true
+	gpgsign = true
 [http]
 	sslBackend = openssl
 [gpg]
