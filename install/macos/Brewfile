@@ -1,4 +1,5 @@
 # Tools
+brew 'btop'
 brew 'bat'
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
@@ -7,6 +8,7 @@ brew 'gh'
 brew 'git'
 brew 'grep'
 brew 'neovim'
+brew 'zellij'
 brew 'zoxide'
 brew 'zlib'
 brew 'eza'
@@ -14,6 +16,7 @@ brew 'gpg'
 brew 'jandedobbeleer/oh-my-posh/oh-my-posh'
 
 # Development
+brew 'deno'
 brew 'go'
 brew 'rust'
 brew 'awscli'
@@ -31,7 +34,6 @@ cask 'dbngin'
 cask 'discord'
 cask 'docker'
 cask 'openkey'
-cask 'kitty'
 cask 'postman'
 cask 'arc'
 cask 'obsidian'
@@ -41,6 +43,7 @@ cask 'telegram'
 cask 'vlc'
 cask 'visual-studio-code'
 cask 'zalo'
+cask 'ghostty'
 
 # Fonts
 cask 'font-mononoki-nerd-font'

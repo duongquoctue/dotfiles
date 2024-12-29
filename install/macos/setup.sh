@@ -9,7 +9,7 @@ else
     brew bundle --file "$(dirname $0)/Brewfile" --no-lock
 fi
 
-eval $(/opt/homebrew/bin/brew shellenv)
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Set default MySQL root password and auth type
 # if test ! "$(which mysql)"; then

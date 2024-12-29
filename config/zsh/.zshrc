@@ -43,6 +43,7 @@ export GOOS=darwin
 export GOARCH=arm64
 
 # personal aliases
+alias cat='bat -p'
 alias c='clear'
 alias ls='eza'
 alias l='eza'
