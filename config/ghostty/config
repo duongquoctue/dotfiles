@@ -4,4 +4,4 @@ font-family-bold = "mononoki Nerd Font Mono Bold"
 font-family-italic = "mononoki Nerd Font Mono Italic"
 font-family-bold-italic = "mononoki Nerd Font Mono Bold Italic"
 font-size = 14
-macos-icon-frame = plastic
+adjust-cell-height = 6
