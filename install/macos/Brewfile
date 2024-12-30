@@ -13,6 +13,7 @@ brew 'zoxide'
 brew 'zlib'
 brew 'eza'
 brew 'gpg'
+brew 'thefuck'
 brew 'jandedobbeleer/oh-my-posh/oh-my-posh'
 
 # Development
