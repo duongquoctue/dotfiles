@@ -22,6 +22,10 @@ if [ -x "$(command -v oh-my-posh)" ]; then
     eval "$(oh-my-posh init zsh --config "$HOME/.config/ohmyposh/theme.json")"
 fi
 
+if [ -x "$(command -v thefuck)" ]; then
+   eval "$(thefuck --alias)"
+fi
+
 # history stuff
 setopt HIST_FIND_NO_DUPS
 setopt HIST_IGNORE_ALL_DUPS
